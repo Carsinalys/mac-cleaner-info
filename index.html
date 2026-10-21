@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MacCleaner Support — Help, FAQ and Contact</title>
+    <meta name="description" content="Support for MacCleaner, the macOS disk space cleaner. Contact the developer, read the FAQ and troubleshooting guide, or review the privacy policy."/>
+    <meta name="theme-color" content="#0a1c3d"/>
+    <link rel="canonical" href="https://carsinalys.github.io/mac-cleaner-info/"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/>
+    <link rel="apple-touch-icon" href="assets/icon-256.png"/>
+    <link rel="stylesheet" href="assets/styles.css"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="MacCleaner Support"/>
+    <meta property="og:description" content="Help, FAQ, troubleshooting and contact for MacCleaner — free up disk space on macOS."/>
+    <meta property="og:url" content="https://carsinalys.github.io/mac-cleaner-info/"/>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="./">
+                <img src="assets/icon-128.png" alt="" width="26" height="26"/>
+                MacCleaner
+            </a>
+            <nav class="topbar__nav" aria-label="Sections">
+                <a href="#contact">Contact</a>
+                <a href="#getting-started">Getting started</a>
+                <a href="#features">Features</a>
+                <a href="#troubleshooting">Troubleshooting</a>
+                <a href="#faq">FAQ</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="wrap">
+        <section class="hero" id="contact" style="margin-top: 20px">
+            <div class="hero__top">
+                <img class="hero__icon" src="assets/icon-128.png" alt="MacCleaner app icon" width="72" height="72"/>
+                <div>
+                    <span class="eyebrow" style="color: var(--hero-text-secondary)">Support</span>
+                    <h1>MacCleaner</h1>
+                </div>
+            </div>
+
+            <p class="lead">
+                MacCleaner is a native macOS app that frees up disk space by scanning for
+                developer caches (Xcode, Docker, Node.js, Rust, Homebrew, Python, AI model
+                stores), application leftovers, duplicate files, and large files. Every scan
+                and deletion happens on your Mac — your data never leaves the device.
+            </p>
+
+            <div class="hero__badges">
+                <span class="badge">macOS 14 Sonoma or later</span>
+                <span class="badge">Apple silicon &amp; Intel</span>
+                <span class="badge badge--green">No data collection</span>
+                <span class="badge">Lifetime license · $9.99 once</span>
+            </div>
+
+            <div class="contact">
+                <div class="contact__label">Contact support</div>
+                <a class="contact__mail" href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a>
+                <div class="contact__meta">
+                    <p>Email is the fastest way to reach the developer — for bugs, questions,
+                       refund help, and feature ideas.</p>
+                    <p>Typical reply time: within 2 business days.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="getting-started">
+            <h2>Getting started</h2>
+            <p class="muted">MacCleaner is designed to work in under a minute — here's the quick start:</p>
+            <ol class="muted">
+                <li><strong>Grant folder access.</strong> On first launch, select your home folder when asked. This is a macOS security requirement — MacCleaner only scans folders you explicitly grant access to.</li>
+                <li><strong>Optionally grant /Applications access.</strong> If you want to uninstall apps completely (including their leftover files), select your /Applications folder next. You can skip this and return later from Settings.</li>
+                <li><strong>Run a scan.</strong> Click "Start Scan" on the Overview tab. The scan finds developer caches, app leftovers, duplicates, and large files. Results appear in under a minute on most Macs.</li>
+                <li><strong>Explore what was found.</strong> Each category in the results shows a file tree — click any file for Quick Look preview, or right-click to reveal in Finder or exclude it from future scans.</li>
+                <li><strong>Clean safely.</strong> Smart Clean pre-selects only safe-to-delete items, or pick manually. Either way, every deletion goes through Trash — nothing is permanently lost without your explicit confirmation.</li>
+            </ol>
+        </section>
+
+        <section id="features">
+            <h2>What MacCleaner scans</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🧹</div>
+                    <div class="feature-name">Developer Caches</div>
+                    <div class="feature-desc">Xcode, Docker, Node.js, Rust, Homebrew, Python, AI model stores</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔁</div>
+                    <div class="feature-name">Duplicates</div>
+                    <div class="feature-desc">Exact SHA-256 matching plus visually-similar photo detection</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-name">Sunburst Map</div>
+                    <div class="feature-desc">Interactive drill-down disk map with external volume support</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📦</div>
+                    <div class="feature-name">Uninstaller</div>
+                    <div class="feature-desc">App bundle sizes plus leftover caches, preferences, and residue</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <div class="feature-name">Smart Clean</div>
+                    <div class="feature-desc">One tap pre-selects safe-to-delete categories for review</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🗑️</div>
+                    <div class="feature-name">Safe Deletion</div>
+                    <div class="feature-desc">Dry-run pass, Trash-first, audit log, protected system paths</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <div class="card">
+                <h3 class="muted">MacCleaner cannot see some of my files</h3>
+                <p class="muted">macOS restricts apps to folders you've explicitly granted access to. If MacCleaner seems to miss files that you know exist (e.g., in ~/Library or other user accounts), the folder containing them hasn't been granted. You can:</p>
+                <ul class="muted">
+                    <li>Grant the parent folder (e.g., your entire home folder) instead of a subfolder.</li>
+                    <li>Check Settings → Scan Exclusions — maybe you excluded that path earlier.</li>
+                    <li>Note that system files, other users' accounts, and macOS "System Data" are <em>never</em> visible to any Mac App Store app.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="muted">The disk map total is smaller than what Finder shows</h3>
+                <p class="muted">This is expected. The map only covers folders you granted access to; Finder shows <em>everything</em> including system data, other users, and protected folders that no third-party app can see. MacCleaner's numbers for the folders it covers are more accurate: it reports actual on-disk allocation (not logical file size) and handles sparse files like Docker.raw correctly.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="muted">Scanning is very slow on my external drive</h3>
+                <p class="muted">If the drive is a network volume (SMB, NFS) mounted on your Mac, a slow response is the network. MacCleaner has a 60-second timeout per subtree — if the drive hangs, the affected files are skipped, and the scan continues. Your results may be incomplete in that case.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="muted">Smart Clean or individual deletion says "Permission denied"</h3>
+                <p class="muted">Files locked by another app or with restrictive permissions may refuse to move to Trash. Try closing the app that owns those files, then scan again. If the problem persists, remove the folder from Scan Exclusions and re-grant access.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="muted">The sunburst visualizer shows a smaller total than the scan</h3>
+                <p class="muted">Both numbers are correct for their scope. The Overview scan reports the total of reclaimable (deletable) items, while the visualizer maps the entire home folder — including files that aren't flagged for deletion. The sunburst is a breakdown of your full disk usage, not just the "junk".</p>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently asked questions</h2>
+            <div class="rows">
+                <details>
+                    <summary>Is MacCleaner safe to use?</summary>
+                    <div class="answer">
+                        <p>Yes — that's the core design. Every deletion goes through macOS's Trash (or an optional quarantine folder), protected system paths like <code>/System</code> and <code>/Library/Apple</code> are locked before any scan starts, and a dry-run pass shows you exactly what will be deleted before anything happens. Nothing is permanently erased without your explicit confirmation.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Does MacCleaner send any data anywhere?</summary>
+                    <div class="answer">
+                        <p>No. All scanning and cleanup is local. There are no analytics SDKs, no crash-reporting tools, no advertising. The only network traffic is Apple's own StoreKit purchase verification — which is handled by macOS and required for App Store purchases. See the <a href="privacy.html">privacy policy</a>.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Why does Finder show more "used" space than MacCleaner?</summary>
+                    <div class="answer">
+                        <p>MacCleaner only scans folders you've granted it access to. macOS "System Data", other users' accounts, and protected system volumes are invisible to every Mac App Store app. This is a privacy feature, not a limitation of MacCleaner specifically — no cleaner can see those areas.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Does MacCleaner delete duplicates of hard-linked files?</summary>
+                    <div class="answer">
+                        <p>MacCleaner counts hard-linked files only once per scan (counting each hard link separately would inflate the reported reclaimable space). If the same physical file appears at multiple paths as hard links, the first occurrence is counted and subsequent ones show as 0 bytes.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Is MacCleaner a subscription?</summary>
+                    <div class="answer">
+                        <p>No. You download the app free, explore everything it finds, and unlock the full experience with a one-time $9.99 Lifetime License. No subscription, no recurring charges, ever.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>How do I request a refund?</summary>
+                    <div class="answer">
+                        <p>Apple handles all App Store billing and refunds. Request one at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> using the Apple ID that made the purchase. If something in the app caused the problem, email us too — we'd rather fix it.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Which macOS versions are supported?</summary>
+                    <div class="answer">
+                        <p>macOS 14 Sonoma and later, on both Apple Silicon and Intel Macs.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Can I use MacCleaner on external drives?</summary>
+                    <div class="answer">
+                        <p>Yes. In the Visualizer tab, click the plus button and select any mounted volume or folder. You can also drag a folder onto the MacCleaner icon in Finder. Scanning external drives works the same as scanning your home folder, and you can clean files from them the same way.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Can I exclude folders from scans?</summary>
+                    <div class="answer">
+                        <p>Yes. Right-click any folder in a scan result and choose "Exclude from Scans," or manage exclusions in Settings. Excluded paths are skipped entirely; remove them any time to include them again.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="privacy-summary">
+            <h2>Privacy in one paragraph</h2>
+            <div class="notice">
+                <h3>All processing is local — your data never leaves your Mac</h3>
+                <p class="muted">
+                    MacCleaner has no account system, no analytics SDKs, no advertising, and
+                    no third-party code. It does not track you. The only data it stores is your
+                    own settings and scan results, kept locally on your Mac and removed with
+                    the app.
+                </p>
+                <div class="btn-row">
+                    <a class="btn" href="privacy.html">Read the full privacy policy</a>
+                    <a class="btn" href="mailto:cardinalys81@gmail.com">Email support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__links">
+                <a href="./">Support</a>
+                <a href="privacy.html">Privacy policy</a>
+                <a href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a>
+            </div>
+            <p>
+                MacCleaner is an independent app for macOS and is not affiliated with,
+                endorsed by or sponsored by Apple Inc. or any developer tool or
+                container vendor. Product names and trademarks (Xcode, Docker, Node.js,
+                Rust, Homebrew, Python) are used to describe what MacCleaner scans and
+                belong to their respective owners.
+            </p>
+            <p>© 2026 Andrei Baranau. All rights reserved. Page last updated 21 October 2026.</p>
+        </div>
+    </footer>
+</body>
+</html>

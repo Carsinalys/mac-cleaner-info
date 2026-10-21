@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MacCleaner Privacy Policy</title>
+    <meta name="description" content="Privacy policy for MacCleaner, the macOS disk space cleaner. No data collection, no tracking, no analytics — your files never leave your Mac."/>
+    <meta name="theme-color" content="#0a1c3d"/>
+    <link rel="canonical" href="https://carsinalys.github.io/mac-cleaner-info/privacy.html"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/>
+    <link rel="apple-touch-icon" href="assets/icon-256.png"/>
+    <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="./">
+                <img src="assets/icon-128.png" alt="" width="26" height="26"/>
+                MacCleaner
+            </a>
+            <nav class="topbar__nav" aria-label="Sections">
+                <a href="./">Support</a>
+                <a href="privacy.html" aria-current="page">Privacy</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="wrap">
+        <section style="margin-top: 32px">
+            <span class="eyebrow">Legal</span>
+            <h1>Privacy Policy</h1>
+            <p class="lead">
+                MacCleaner is a macOS app that scans your home folder for disk space
+                wasters and helps you delete them safely. It collects no personal data,
+                contains no analytics or advertising code, and works entirely on your Mac.
+            </p>
+            <p class="tiny">Effective date: 21 October 2026 · Applies to MacCleaner 1.0 and later.</p>
+        </section>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <div class="notice">
+                <h3>What this policy comes down to</h3>
+                <ul class="muted">
+                    <li>MacCleaner collects <strong>no personal data</strong> whatsoever.</li>
+                    <li>It does <strong>not track</strong> you across apps, websites or devices.</li>
+                    <li>
+                        File names, sizes, and scan results are used only to display them to
+                        you and are <strong>never stored outside your Mac</strong>.
+                    </li>
+                    <li>
+                        There is <strong>no account</strong>, no sign-in, no advertising and no
+                        third-party SDK.
+                    </li>
+                    <li>
+                        The app makes <strong>no network requests</strong> of its own. The only
+                        network traffic is Apple's own App Store purchase verification,
+                        performed by macOS.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="who">
+            <h2>Who is responsible</h2>
+            <div class="card">
+                <p class="muted">
+                    MacCleaner is developed and published by Andrei Baranau, an independent solo developer. For any privacy
+                    question, data request or complaint, contact:
+                </p>
+                <p>
+                    <a class="btn" href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a>
+                </p>
+                <p class="tiny">
+                    A postal address for formal legal correspondence is available on request by
+                    email.
+                </p>
+            </div>
+        </section>
+
+        <section id="scan-data">
+            <h2>How file scanning works</h2>
+            <div class="card">
+                <p class="muted">
+                    To scan for caches, duplicates, and large files, macOS requires that you
+                    explicitly grant MacCleaner access to your home folder. The app reads file
+                    metadata (names, sizes, modification dates) within that folder and, for
+                    identical-file detection, reads the first and last 4 KB of some files to
+                    compute a checksum. This data is:
+                </p>
+                <ul class="muted">
+                    <li>Used <strong>only on your Mac</strong> to produce the scan results you see.</li>
+                    <li>
+                        Held in memory only during the scan. When you close the app or start a
+                        new scan, previous results are replaced. A small local cache of file
+                        hashes lets repeat scans run faster; it is removed by the "Reset All
+                        App Data" button in Settings.
+                    </li>
+                    <li>
+                        <strong>Never written to any server, log, or third-party service.</strong>
+                    </li>
+                    <li>
+                        Not used to build any profile of you. MacCleaner has no concept of a
+                        "user" — there is nothing to identify you with.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="stored">
+            <h2>What is stored on your Mac</h2>
+            <div class="card">
+                <p class="muted">The app saves its own preferences locally inside its sandbox container:</p>
+                <ul class="muted">
+                    <li>scan thresholds (large file minimum size, old downloads age);</li>
+                    <li>feature switches (Smart Clean preferences, quarantine retention);</li>
+                    <li>which folders you've granted access to (security-scoped bookmarks), so you don't have to re-grant access every launch;</li>
+                    <li>which paths you've excluded from scans;</li>
+                    <li>a local audit log of deletions — so you can see what was cleaned and when;</li>
+                    <li>a local hash cache — so repeat scans skip files that haven't changed.</li>
+                </ul>
+                <p class="muted">
+                    None of this is personal data, none of it is transmitted, and all of it is
+                    removed when you delete the app. The "Reset All App Data" button in
+                    Settings (→ Reset) also removes all of it without deleting the app.
+                </p>
+            </div>
+        </section>
+
+        <section id="purchases">
+            <h2>Purchases</h2>
+            <div class="card">
+                <p class="muted">
+                    The $9.99 Lifetime License is an Apple in-app purchase, handled entirely
+                    by Apple's StoreKit. Payment is processed by Apple; the developer never
+                    sees or receives your name, email address, payment card or billing details.
+                </p>
+                <p class="muted">
+                    The app reads Apple's cryptographically signed purchase record on your
+                    device to determine whether the license is active. That record stays on
+                    your Mac and in your Apple Account. Apple's own privacy policy governs
+                    the purchase itself:
+                    <a href="https://www.apple.com/legal/privacy/" rel="noopener">apple.com/legal/privacy</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="third-parties">
+            <h2>Third parties and tracking</h2>
+            <div class="card">
+                <p class="muted">
+                    MacCleaner contains no analytics, crash-reporting, advertising or
+                    attribution SDKs. No data is shared with, sold to or brokered through any
+                    third party. There are no cookies or trackers in the app. Nothing is
+                    combined with data from other companies to build a profile of you.
+                </p>
+                <p class="muted">
+                    This support website is hosted on GitHub Pages, which — like any web host —
+                    may process standard server request data such as your IP address and
+                    browser type in order to serve the page. That processing is GitHub's,
+                    described in the
+                    <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.
+                    The site loads no analytics, no advertising and no third-party fonts.
+                </p>
+            </div>
+        </section>
+
+        <section id="rights">
+            <h2>Your rights, retention and deletion</h2>
+            <div class="card">
+                <p class="muted">
+                    Because no personal data is collected, there is nothing held about you to
+                    access, correct, export, restrict or erase, and no data is retained on any
+                    server. In practice:
+                </p>
+                <ul class="muted">
+                    <li>
+                        <strong>Deleting your data:</strong> remove the app from your Applications
+                        folder. Your locally stored preferences and scan results go with it.
+                        Or use Settings → Reset → Reset All App Data to wipe everything without
+                        deleting the app.
+                    </li>
+                    <li>
+                        <strong>Revoking permission:</strong> the app only accesses folders you
+                        explicitly granted. Re-granting or removing access is always available
+                        from the app's Settings.
+                    </li>
+                    <li>
+                        <strong>Purchase history:</strong> managed by Apple through your Apple Account.
+                    </li>
+                </ul>
+                <p class="muted">
+                    If you are in the EU/EEA, the UK, California or another region with statutory
+                    data rights, you may still contact us at
+                    <a href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a> and we
+                    will confirm in writing that no personal data about you is held.
+                </p>
+            </div>
+        </section>
+
+        <section id="children">
+            <h2>Children</h2>
+            <div class="card">
+                <p class="muted">
+                    MacCleaner is rated 4+ and is suitable for all ages. It collects no data
+                    from anyone, including children, and contains no advertising, no
+                    user-generated content and no links to social networks.
+                </p>
+            </div>
+        </section>
+
+        <section id="changes">
+            <h2>Changes to this policy</h2>
+            <div class="card">
+                <p class="muted">
+                    If a future version of the app changes how data is handled, this page will
+                    be updated before that version ships, and the effective date above will
+                    change. The current privacy commitments — no collection, no tracking, no
+                    network use beyond Apple's purchase checks — are part of the product, not
+                    a temporary position.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact-legal">
+            <h2>Contact</h2>
+            <div class="card">
+                <p class="muted">
+                    Questions about this policy, or about privacy in the app:
+                    <a href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a>.
+                    Replies usually arrive within 2 business days.
+                </p>
+                <div class="btn-row">
+                    <a class="btn" href="./">Back to support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__links">
+                <a href="./">Support</a>
+                <a href="privacy.html">Privacy policy</a>
+                <a href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a>
+            </div>
+            <p>
+                MacCleaner is an independent app for macOS and is not affiliated with,
+                endorsed by or sponsored by Apple Inc.
+            </p>
+            <p>© 2026 Andrei Baranau. All rights reserved. Page last updated 21 October 2026.</p>
+        </div>
+    </footer>
+</body>
+</html>
