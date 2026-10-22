@@ -31,7 +31,9 @@
                 <a href="#features">Features</a>
                 <a href="#troubleshooting">Troubleshooting</a>
                 <a href="#faq">FAQ</a>
+                <a href="#before-you-delete">Before you delete</a>
                 <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
             </nav>
         </div>
     </header>
@@ -48,25 +50,26 @@
 
             <p class="lead">
                 MacCleaner is a native macOS app that frees up disk space by scanning for
-                developer caches (Xcode, Docker, Node.js, Rust, Homebrew, Python, AI model
-                stores), application leftovers, duplicate files, and large files. Every scan
-                and deletion happens on your Mac — your data never leaves the device.
+                developer caches (Xcode, Node.js, Rust, Homebrew, Python, AI model stores),
+                application leftovers, duplicate files, and large files. You review and
+                confirm everything it removes. Every scan and deletion happens on your Mac —
+                your data never leaves the device.
             </p>
 
             <div class="hero__badges">
                 <span class="badge">macOS 14 Sonoma or later</span>
                 <span class="badge">Apple silicon &amp; Intel</span>
                 <span class="badge badge--green">No data collection</span>
-                <span class="badge">Lifetime license · $9.99 once</span>
+                <span class="badge">One-time purchase · no subscription</span>
             </div>
 
             <div class="contact">
                 <div class="contact__label">Contact support</div>
                 <a class="contact__mail" href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a>
                 <div class="contact__meta">
-                    <p>Email is the fastest way to reach the developer — for bugs, questions,
-                       refund help, and feature ideas.</p>
-                    <p>Typical reply time: within 2 business days.</p>
+                    <p>Email is the way to reach MacCleaner support — for bugs, questions and
+                       feature ideas.</p>
+                    <p>We aim to reply within a few business days.</p>
                 </div>
             </div>
         </section>
@@ -79,7 +82,7 @@
                 <li><strong>Optionally grant /Applications access.</strong> If you want to uninstall apps completely (including their leftover files), select your /Applications folder next. You can skip this and return later from Settings.</li>
                 <li><strong>Run a scan.</strong> Click "Start Scan" on the Overview tab. The scan finds developer caches, app leftovers, duplicates, and large files. Results appear in under a minute on most Macs.</li>
                 <li><strong>Explore what was found.</strong> Each category in the results shows a file tree — click any file for Quick Look preview, or right-click to reveal in Finder or exclude it from future scans.</li>
-                <li><strong>Clean safely.</strong> Smart Clean pre-selects only safe-to-delete items, or pick manually. Either way, every deletion goes through Trash — nothing is permanently lost without your explicit confirmation.</li>
+                <li><strong>Review before you clean.</strong> Smart Clean pre-selects items labelled Safe (regenerable caches), or you pick items yourself. Check the list, run the dry run, and confirm. Items move to the Trash (or the optional quarantine folder), where you can restore them until it is emptied. See <a href="#before-you-delete">Before you delete</a>.</li>
             </ol>
         </section>
 
@@ -89,7 +92,7 @@
                 <div class="feature">
                     <div class="feature-icon">🧹</div>
                     <div class="feature-name">Developer Caches</div>
-                    <div class="feature-desc">Xcode, Docker, Node.js, Rust, Homebrew, Python, AI model stores</div>
+                    <div class="feature-desc">Xcode, Node.js, Rust, Homebrew, Python, AI model stores</div>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">🔁</div>
@@ -109,12 +112,12 @@
                 <div class="feature">
                     <div class="feature-icon">✨</div>
                     <div class="feature-name">Smart Clean</div>
-                    <div class="feature-desc">One tap pre-selects safe-to-delete categories for review</div>
+                    <div class="feature-desc">Pre-selects items labelled Safe for you to review</div>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">🗑️</div>
                     <div class="feature-name">Safe Deletion</div>
-                    <div class="feature-desc">Dry-run pass, Trash-first, audit log, protected system paths</div>
+                    <div class="feature-desc">Dry run, Trash or quarantine, audit log, protected system paths</div>
                 </div>
             </div>
         </section>
@@ -133,7 +136,7 @@
 
             <div class="card">
                 <h3 class="muted">The disk map total is smaller than what Finder shows</h3>
-                <p class="muted">This is expected. The map only covers folders you granted access to; Finder shows <em>everything</em> including system data, other users, and protected folders that no third-party app can see. MacCleaner's numbers for the folders it covers are more accurate: it reports actual on-disk allocation (not logical file size) and handles sparse files like Docker.raw correctly.</p>
+                <p class="muted">This is expected. The map only covers folders you granted access to; Finder shows <em>everything</em> including system data, other users, and protected folders that no third-party app can see. For the folders it covers, MacCleaner reports the space files actually use on disk (not their logical size), so sparse files such as virtual-machine disk images are not over-counted.</p>
             </div>
 
             <div class="card">
@@ -152,13 +155,28 @@
             </div>
         </section>
 
+        <section id="before-you-delete">
+            <h2>Before you delete</h2>
+            <div class="notice">
+                <h3>You decide what is removed — please review every item</h3>
+                <ul class="muted">
+                    <li>MacCleaner suggests files that are usually safe to remove, but it can't know which files matter to you, and its labels can be wrong for your Mac.</li>
+                    <li>Look closely at anything marked <strong>Caution</strong> or <strong>Risky</strong>: virtual environments, toolchains, simulators, archives, AI models, large files and app leftovers can contain work or settings you need.</li>
+                    <li>Removing caches can make apps and tools download or rebuild data afterwards.</li>
+                    <li>Items go to the Trash (or the quarantine folder). After the Trash is emptied or the quarantine period ends, they can't be restored.</li>
+                    <li>Keep a current backup, for example with Time Machine.</li>
+                </ul>
+                <p class="muted">You use MacCleaner at your own risk. The full terms are in the <a href="terms.html">terms of use</a>.</p>
+            </div>
+        </section>
+
         <section id="faq">
             <h2>Frequently asked questions</h2>
             <div class="rows">
                 <details>
-                    <summary>Is MacCleaner safe to use?</summary>
+                    <summary>How does MacCleaner help me avoid deleting the wrong thing?</summary>
                     <div class="answer">
-                        <p>Yes — that's the core design. Every deletion goes through macOS's Trash (or an optional quarantine folder), protected system paths like <code>/System</code> and <code>/Library/Apple</code> are locked before any scan starts, and a dry-run pass shows you exactly what will be deleted before anything happens. Nothing is permanently erased without your explicit confirmation.</p>
+                        <p>Nothing is removed until you review and confirm it. Removed items go to the Trash (or an optional quarantine folder) instead of being erased, protected system and personal locations are refused, and a dry run shows what will be removed first. These safeguards reduce mistakes but can't rule them out — the labels are guidance, and only you know which files matter. Keep a backup and read <a href="#before-you-delete">Before you delete</a>.</p>
                     </div>
                 </details>
 
@@ -186,14 +204,14 @@
                 <details>
                     <summary>Is MacCleaner a subscription?</summary>
                     <div class="answer">
-                        <p>No. You download the app free, explore everything it finds, and unlock the full experience with a one-time $9.99 Lifetime License. No subscription, no recurring charges, ever.</p>
+                        <p>No. Scanning, the disk map and dry runs are free. Moving items to the Trash needs a one-time Lifetime License, an in-app purchase at the price shown in the App Store for your region. No subscription and no recurring charges.</p>
                     </div>
                 </details>
 
                 <details>
                     <summary>How do I request a refund?</summary>
                     <div class="answer">
-                        <p>Apple handles all App Store billing and refunds. Request one at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> using the Apple ID that made the purchase. If something in the app caused the problem, email us too — we'd rather fix it.</p>
+                        <p>Apple handles all App Store billing and refunds. Request one at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> using the Apple Account that made the purchase. If something in the app caused the problem, please email support too so it can be fixed.</p>
                     </div>
                 </details>
 
@@ -243,16 +261,18 @@
             <div class="footer__links">
                 <a href="./">Support</a>
                 <a href="privacy.html">Privacy policy</a>
+                <a href="terms.html">Terms of use</a>
                 <a href="mailto:cardinalys81@gmail.com">cardinalys81@gmail.com</a>
             </div>
             <p>
                 MacCleaner is an independent app for macOS and is not affiliated with,
-                endorsed by or sponsored by Apple Inc. or any developer tool or
-                container vendor. Product names and trademarks (Xcode, Docker, Node.js,
-                Rust, Homebrew, Python) are used to describe what MacCleaner scans and
-                belong to their respective owners.
+                endorsed by or sponsored by Apple Inc. or any developer tool vendor.
+                Product names and trademarks (Xcode, Node.js, Rust, Homebrew, Python) are
+                used to describe what MacCleaner scans and belong to their respective owners.
+                MacCleaner is provided "as is" under the
+                <a href="terms.html">terms of use</a>.
             </p>
-            <p>© 2026 Andrei Baranau. All rights reserved. Page last updated 21 October 2026.</p>
+            <p>© 2026 MacCleaner. All rights reserved. Page last updated 22 October 2026.</p>
         </div>
     </footer>
 </body>
